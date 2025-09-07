@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quantum Seminar Mockup</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+:root {
+  --color-brand: #FFB703;
+  --color-brand-light: #FFD166;
+  --color-brand-pale: #FFF3D6;
+  --color-brand-dark: #FB8500;
+
+  --color-deep: #0D1B2A;
+  --color-deep-light: #1B263B;
+  --color-deep-pale: #415A77;
+  --color-deep-dark: #000814;
+
+  --color-cyan: #3DDAD7;
+  --color-cyan-light: #74E4E1;
+  --color-cyan-pale: #E6FAFB;
+  --color-cyan-dark: #00A6A3;
+
+  --color-violet: #6C63FF;
+  --color-violet-light: #9A94FF;
+  --color-violet-pale: #E0D7FF;
+  --color-violet-dark: #4338CA;
+
+  --color-red: #D62828;
+  --color-red-light: #F07171;
+  --color-red-pale: #FAD4D4;
+  --color-red-dark: #9B1C1C;
+
+  --color-white: #FFFFFF;
+  --color-surface: #F4F4F9;
+  --color-gray: #778DA9;
+  --color-darktext: #2C2C2C;
+}
+</style>
+</head>
+<body class="bg-[var(--color-surface)] text-[var(--color-deep)] font-sans">
+
+<!-- Navbar -->
+<header class="bg-[var(--color-deep)] text-white shadow-md">
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <h1 class="text-2xl font-bold text-[var(--color-brand)]">Quantum Seminar</h1>
+    <nav class="space-x-6">
+      <a href="#about" class="hover:text-[var(--color-brand)]">About</a>
+      <a href="#schedule" class="hover:text-[var(--color-brand)]">Schedule</a>
+      <a href="#committee" class="hover:text-[var(--color-brand)]">Committee</a>
+      <a href="#contact" class="hover:text-[var(--color-brand)]">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="bg-gradient-to-r from-[var(--color-brand)] to-[var(--color-violet)] text-white py-24">
+  <div class="max-w-4xl mx-auto text-center px-4">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-6">
+      <span style="color: var(--color-deep-pale);">Q</span>uantum Seminar Mockup
+    </h2>
+    <p class="text-lg md:text-xl mb-8">Exploring frontiers of quantum physics and mathematics in an inviting atmosphere.</p>
+    <a href="#contact" class="px-6 py-3 bg-white text-[var(--color-deep)] font-semibold rounded-xl shadow-md hover:bg-[var(--color-cyan)] hover:text-white transition">Get in Touch</a>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="max-w-5xl mx-auto py-20 px-4">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h3 class="text-3xl font-bold mb-4 text-[var(--color-deep)]">About This Seminar</h3>
+      <p class="text-lg text-[var(--color-gray)] leading-relaxed">This is a demonstration seminar website to showcase layout, colors, and interactivity. All content is placeholder for testing purposes.</p>
+    </div>
+    <div class="bg-[var(--color-brand)]/20 rounded-2xl p-8 text-center">
+      <h4 class="text-xl font-semibold mb-2">Sample Highlight</h4>
+      <p class="text-[var(--color-deep)]">"Quantum Mockup Lecture" – Guest Talk by Prof. Placeholder</p>
+    </div>
+  </div>
+</section>
+
+<!-- Schedule Section -->
+<section id="schedule" class="bg-[var(--color-deep)] text-white py-20 px-4">
+  <div class="max-w-5xl mx-auto text-center">
+    <h3 class="text-3xl font-bold mb-8 text-[var(--color-brand)]">Seminar Schedule</h3>
+    <ul class="space-y-6 text-lg">
+      <li class="p-6 bg-[var(--color-brand)]/20 rounded-xl cursor-pointer hover:bg-[var(--color-brand)]/40 transition">March 10 – Quantum Field Theory: Basics</li>
+      <li class="p-6 bg-[var(--color-violet)]/20 rounded-xl cursor-pointer hover:bg-[var(--color-violet)]/40 transition">April 21 – Random Operators</li>
+      <li class="p-6 bg-[var(--color-cyan)]/20 rounded-xl cursor-pointer hover:bg-[var(--color-cyan)]/40 transition">May 15 – Quantum Information</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Organizing Committee Section -->
+<section id="committee" class="max-w-6xl mx-auto py-20 px-4">
+  <h3 class="text-3xl font-bold mb-12 text-[var(--color-deep)] text-center">Organizing Committee</h3>
+  <div class="grid md:grid-cols-3 gap-12">
+
+    <!-- Head -->
+    <div class="bg-white rounded-2xl shadow-md p-6 text-center">
+      <img src="https://via.placeholder.com/150" alt="Head" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+      <h4 class="text-xl font-semibold mb-2 text-[var(--color-deep)]">Head of Seminar</h4>
+      <p class="text-[var(--color-gray)] mb-4">Leads the seminar’s scientific direction and oversees the program.</p>
+    </div>
+
+    <!-- Member 1 -->
+    <div class="bg-white rounded-2xl shadow-md p-6 text-center">
+      <img src="https://via.placeholder.com/150" alt="Member 1" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+      <h4 class="text-xl font-semibold mb-2 text-[var(--color-deep)]">Member One</h4>
+      <p class="text-[var(--color-gray)] mb-4">Manages local logistics and supports seminar operations.</p>
+      <a href="#" class="px-4 py-2 bg-[var(--color-brand)] text-white rounded-full shadow-md hover:bg-[var(--color-deep)] transition">Contact</a>
+    </div>
+
+    <!-- Member 2 -->
+    <div class="bg-white rounded-2xl shadow-md p-6 text-center">
+      <img src="https://via.placeholder.com/150" alt="Member 2" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+      <h4 class="text-xl font-semibold mb-2 text-[var(--color-deep)]">Member Two</h4>
+      <p class="text-[var(--color-gray)] mb-4">Handles scheduling, communication, and online services like streaming and website.</p>
+      <a href="#" class="px-4 py-2 bg-[var(--color-brand)] text-white rounded-full shadow-md hover:bg-[var(--color-deep)] transition">Contact</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="max-w-4xl mx-auto py-20 px-4 text-center">
+  <h3 class="text-3xl font-bold mb-6 text-[var(--color-deep)]">Get in Touch</h3>
+  <p class="mb-6 text-lg text-[var(--color-gray)]">This is a placeholder contact section for testing buttons and layout.</p>
+  <a href="#" class="px-6 py-3 bg-[var(--color-brand)] text-white font-semibold rounded-xl shadow-md hover:bg-[var(--color-deep)] transition">Contact Us</a>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[var(--color-deep)] text-[var(--color-gray)] py-6 text-center">
+  <p>&copy; 2025 Quantum Seminar Mockup</p>
+</footer>
+
+</body>
+</html>
