@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kuantum – Quantum Seminar in Karlsruhe</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+:root {
+--color-brand: #FFB703;
+--color-brand-light: #FFD166;
+--color-brand-pale: #FFF3D6;
+--color-brand-dark: #FB8500;
+--color-deep: #0D1B2A;
+--color-deep-light: #1B263B;
+--color-deep-pale: #415A77;
+--color-deep-dark: #000814;
+--color-cyan: #3DDAD7;
+--color-cyan-light: #74E4E1;
+--color-cyan-pale: #E6FAFB;
+--color-cyan-dark: #00A6A3;
+--color-violet: #6C63FF;
+--color-violet-light: #9A94FF;
+--color-violet-pale: #E0D7FF;
+--color-violet-dark: #4338CA;
+--color-red: #D62828;
+--color-red-light: #F07171;
+--color-red-pale: #FAD4D4;
+--color-red-dark: #9B1C1C;
+--color-white: #FFFFFF;
+--color-surface: #F4F4F9;
+--color-gray: #778DA9;
+--color-darktext: #2C2C2C;
+}
+</style>
+</head>
+<body class="bg-[var(--color-surface)] text-[var(--color-deep)] font-sans">
+
+<!-- Navbar -->
+<header class="bg-[var(--color-deep)] text-white shadow-md">
+<div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+<h1 class="text-2xl font-bold text-[var(--color-brand)]">Kuantum</h1>
+<nav class="space-x-6">
+<a href="#about" class="hover:text-[var(--color-brand)]">About</a>
+<a href="#schedule" class="hover:text-[var(--color-brand)]">Schedule</a>
+<a href="#committee" class="hover:text-[var(--color-brand)]">Committee</a>
+<a href="#contact" class="hover:text-[var(--color-brand)]">Contact</a>
+</nav>
+</div>
+</header>
+
+<!-- Hero Section -->
+<section class="bg-gradient-to-r from-[var(--color-brand)] to-[var(--color-violet)] text-white py-24">
+<div class="max-w-4xl mx-auto text-center px-4">
+<h2 class="text-4xl md:text-5xl font-extrabold mb-6"><span style="color: var(--color-deep-pale);">K</span>arlsruhe: Q<span style="color: var(--color-deep-pale);">uantum</span> Seminar</h2>
+<p class="text-lg md:text-xl mb-8">Exploring the frontiers of quantum physics and mathematics in an inviting academic atmosphere.</p>
+<a href="#contact" class="px-6 py-3 bg-white text-[var(--color-deep)] font-semibold rounded-xl shadow-md hover:bg-[var(--color-cyan)] hover:text-white transition">Get in Touch</a>
+</div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="max-w-5xl mx-auto py-20 px-4">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h3 class="text-3xl font-bold mb-4 text-[var(--color-deep)]">About Kuantum</h3>
+<p class="text-lg text-[var(--color-gray)] leading-relaxed">Kuantum is a new seminar series based in Karlsruhe, bringing together researchers to explore cutting-edge topics in quantum mechanics, spectral theory, and related fields. Our mission is to foster dialogue and inspire collaboration in a welcoming and engaging environment.</p>
+</div>
+<div class="bg-[var(--color-brand)]/20 rounded-2xl p-8 text-center">
+<h4 class="text-xl font-semibold mb-2">Upcoming Highlight</h4>
+<p class="text-[var(--color-deep)]">"Spectral Properties of Schrödinger Operators" – Guest Talk by Prof. M. Mustermann</p>
+</div>
+</div>
+</section>
+
+<!-- Schedule Section -->
+<section id="schedule" class="bg-[var(--color-deep)] text-white py-20 px-4">
+<div class="max-w-5xl mx-auto text-center">
+<h3 class="text-3xl font-bold mb-8 text-[var(--color-brand)]">Seminar Schedule</h3>
+<ul class="space-y-6 text-lg">
+<li class="p-6 bg-[var(--color-brand)]/20 rounded-xl">September 23 – Quantum Talks with cool title</li>
+<li class="p-6 bg-[var(--color-violet)]/20 rounded-xl">October 23 – Schrödinger Operators add cool title</li>
+<li class="p-6 bg-[var(--color-cyan)]/20 rounded-xl">November 15 – Next impresive title</li>
+</ul>
+</div>
+</section>
+
+<!-- Organizing Committee Section -->
+<section id="committee" class="max-w-6xl mx-auto py-20 px-4">
+<h3 class="text-3xl font-bold mb-12 text-[var(--color-deep)] text-center">Organizing Committee</h3>
+<div class="grid md:grid-cols-4 gap-12">
+
+<!-- Member 1: Head -->
+<div class="bg-white rounded-2xl shadow-md p-6 text-center">
+<img src="dirk.jpg" alt="Dirk Hundertmark" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+<h4 class="text-xl font-semibold mb-2 text-[var(--color-deep)]">Dirk Hundertmark</h4>
+<p class="text-[var(--color-gray)] mb-4">Head of Kuantum, leads the seminar’s scientific direction and oversees the program.</p>
+</div>
+
+<!-- Member 2: Organizer -->
+<div class="bg-white rounded-2xl shadow-md p-6 text-center">
+<img src="marvin.jpg" alt="Marvin Schulz" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+<h4 class="text-xl font-semibold mb-2 text-[var(--color-deep)]">Marvin Schulz</h4>
+<p class="text-[var(--color-gray)] mb-4">Organizer, responsible for scheduling, researcher communications, and seminar logistics.</p>
+<a href="mailto:marvin@example.com" class="px-4 py-2 bg-[var(--color-brand)] text-white rounded-full shadow-md hover:bg-[var(--color-deep)] transition">Contact</a>
+</div>
+
+<!-- Member 3: Technical Coordinator -->
+<div class="bg-white rounded-2xl shadow-md p-6 text-center">
+<img src="rafael.jpg" alt="Rafael Hirsch" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+<h4 class="text-xl font-semibold mb-2 text-[var(--color-deep)]">Rafael Hirsch</h4>
+<p class="text-[var(--color-gray)] mb-4">Technical Coordinator, supporting online services, streaming, and digital infrastructure.</p>
+</div>
+
+<!-- Member 4: Technical Coordinator -->
+<div class="bg-white rounded-2xl shadow-md p-6 text-center">
+<img src="jonathan.jpg" alt="Jonathan Rau" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+<h4 class="text-xl font-semibold mb-2 text-[var(--color-deep)]">Jonathan Rau</h4>
+<p class="text-[var(--color-gray)] mb-4">Technical Coordinator, assisting with seminar technology, communications, and IT support.</p>
+</div>
+
+</div>
+</section>
+
+<!-- Impressum & Newsletter Section -->
+<section id="impressum" class="bg-[var(--color-deep-light)] text-white py-12 px-4">
+  <div class="max-w-5xl mx-auto text-center space-y-4">
+    <h3 class="text-2xl font-bold mb-2 text-[var(--color-brand)]">Impressum</h3>
+    <p class="text-[var(--color-white)]">
+      <strong>Workgroup Applied Analysis – Secretariat</strong><br>
+      Kollegiengebäude Mathematik (20.30), Room 2.029<br>
+      Englerstrasse 2, 76131 Karlsruhe, Germany
+    </p>
+    <p class="text-[var(--color-white)]">
+      To receive seminar invitations and announcements, you can subscribe to our email newsletter. Please <a href="#contact" class="underline text-[var(--color-cyan)] hover:text-[var(--color-brand)]">contact us</a> to subscribe.
+    </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-[var(--color-deep)] text-[var(--color-gray)] py-6 text-center">
+  <p>&copy; 2025 Kuantum – Karlsruhe: Quantum Seminar</p>
+</footer>
+
+</body>
+</html>
