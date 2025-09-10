@@ -1,4 +1,4 @@
-<!-- version 1.01 by M. R. Schulz, edited on September 09 2025 -->
+<!-- version 1.02 by M. R. Schulz, edited on September 10 2025 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,15 +39,37 @@
 
 <!-- Navbar -->
 <header class="bg-[var(--color-deep)] text-white shadow-md">
-<div class="max-w-6xl mx-auto flex justify-between items-center p-4">
-<h1 class="text-2xl font-bold text-[var(--color-brand)]">Kuantum</h1>
-<nav class="space-x-6">
-<a href="#about" class="hover:text-[var(--color-brand)]">About</a>
-<a href="#schedule" class="hover:text-[var(--color-brand)]">Schedule</a>
-<a href="#committee" class="hover:text-[var(--color-brand)]">Committee</a>
-<a href="#contact" class="hover:text-[var(--color-brand)]">Contact</a>
-</nav>
-</div>
+  <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    
+    <!-- Logo -->
+    <a href="#" class="flex items-center space-x-2">
+      <img src="logo_white.svg" alt="Kuantum Logo" class="h-10 w-auto">
+      <span class="hidden sm:inline text-2xl font-bold text-[var(--color-brand)]">Kuantum</span>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-6">
+      <a href="#about" class="hover:text-[var(--color-brand)]">About</a>
+      <a href="#schedule" class="hover:text-[var(--color-brand)]">Schedule</a>
+      <a href="#committee" class="hover:text-[var(--color-brand)]">Committee</a>
+      <a href="#contact" class="hover:text-[var(--color-brand)]">Contact</a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden flex items-center focus:outline-none">
+      <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Nav -->
+  <div id="mobile-menu" class="hidden md:hidden bg-[var(--color-deep-light)] px-4 pb-4 space-y-2">
+    <a href="#about" class="block py-2 hover:text-[var(--color-brand)]">About</a>
+    <a href="#schedule" class="block py-2 hover:text-[var(--color-brand)]">Schedule</a>
+    <a href="#committee" class="block py-2 hover:text-[var(--color-brand)]">Committee</a>
+    <a href="#contact" class="block py-2 hover:text-[var(--color-brand)]">Contact</a>
+  </div>
 </header>
 
 <!-- Hero Section -->
@@ -176,5 +198,15 @@
   <p>&copy; 2025 Kuantum – Karlsruhe: Quantum Seminar</p>
 </footer>
 
+<!-- Script for mobile menu -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
 </body>
 </html>
+
