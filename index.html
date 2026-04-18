@@ -1,4 +1,4 @@
-<!-- version 2.00 by M. R. Schulz, drafted for Sommersemester 2026 -->
+<!-- version 2.10 by M. R. Schulz, updated for Sommersemester 2026 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +38,8 @@
       scroll-behavior: smooth;
     }
 
-    .schedule-item:hover {
+    .schedule-item:hover,
+    .archive-card:hover {
       transform: translateY(-2px);
       transition: transform 180ms ease;
     }
@@ -60,7 +61,6 @@
       <nav class="hidden md:flex items-center space-x-6">
         <a href="#about" class="hover:text-[var(--color-brand)]">About</a>
         <a href="#schedule" class="hover:text-[var(--color-brand)]">Summer 2026</a>
-        <a href="#archive" class="hover:text-[var(--color-brand)]">Archive</a>
         <a href="#committee" class="hover:text-[var(--color-brand)]">Committee</a>
         <a href="#contact" class="hover:text-[var(--color-brand)]">Contact</a>
       </nav>
@@ -75,7 +75,6 @@
     <div id="mobile-menu" class="hidden md:hidden bg-[var(--color-deep-light)] px-4 pb-4 space-y-2">
       <a href="#about" class="block py-2 hover:text-[var(--color-brand)]">About</a>
       <a href="#schedule" class="block py-2 hover:text-[var(--color-brand)]">Summer 2026</a>
-      <a href="#archive" class="block py-2 hover:text-[var(--color-brand)]">Archive</a>
       <a href="#committee" class="block py-2 hover:text-[var(--color-brand)]">Committee</a>
       <a href="#contact" class="block py-2 hover:text-[var(--color-brand)]">Contact</a>
     </div>
@@ -89,16 +88,16 @@
         <span style="color: var(--color-deep-pale);">K</span>arlsruhe: Q<span style="color: var(--color-deep-pale);">uantum</span> Seminar
       </h1>
       <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-white/95">
-        A seminar series on quantum physics, mathematical physics, and spectral theory — with a current semester schedule, clear speaker information, and a permanent archive of past talks.
+        A seminar series on quantum physics, mathematical physics, and spectral theory — with the current semester schedule in front and a permanent archive of past talks behind it.
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-4">
         <a href="#schedule"
            class="px-6 py-3 bg-white text-[var(--color-deep)] font-semibold rounded-xl shadow-md hover:bg-[var(--color-cyan)] hover:text-white transition">
           View Summer Schedule
         </a>
-        <a href="#archive"
+        <a href="archive/ws25-26.html"
            class="px-6 py-3 bg-[var(--color-deep)]/80 text-white font-semibold rounded-xl shadow-md hover:bg-[var(--color-deep-dark)] transition border border-white/20">
-          Browse Previous Semesters
+          Open Archive
         </a>
       </div>
     </div>
@@ -110,21 +109,26 @@
       <div>
         <h2 class="text-3xl font-bold mb-6 text-[var(--color-deep)]">About Kuantum</h2>
         <p class="text-lg text-[var(--color-gray)] leading-relaxed mb-5">
-          Kuantum is a seminar series in Karlsruhe bringing together researchers working on quantum mechanics, spectral theory, mathematical physics, and related areas.
+          Kuantum is a seminar series in Karlsruhe bringing together researchers and students working on quantum mechanics, spectral theory, mathematical physics, and related areas.
+        </p>
+        <p class="text-lg text-[var(--color-gray)] leading-relaxed">
+          This webpage is organized semester by semester: the <span class="font-semibold text-[var(--color-deep)]">current semester</span> is displayed here on the main page, while previous schedules remain available in the archive for documentation and continuity.
         </p>
       </div>
 
       <div class="bg-white rounded-2xl shadow-lg border border-[var(--color-brand)]/30 p-8">
-        <div class="inline-flex items-center rounded-full bg-[var(--color-brand-pale)] text-[var(--color-brand-dark)] px-3 py-1 text-sm font-semibold mb-4">
-          Current semester
+        <div class="inline-flex items-center rounded-full bg-[var(--color-red-pale)] text-[var(--color-red-dark)] px-3 py-1 text-sm font-semibold mb-4">
+          Next upcoming talk
         </div>
-        <h3 class="text-2xl font-bold text-[var(--color-deep)] mb-4">Summer semester 2026</h3>
+        <h3 class="text-2xl font-bold text-[var(--color-deep)] mb-3">Open slot</h3>
+        <p class="text-[var(--color-deep)] font-semibold mb-1">Invited or contributed talk</p>
+        <p class="text-[var(--color-red)] font-medium mb-4">30 April 2026 · 11:30 – 13:00</p>
         <p class="text-[var(--color-gray)] leading-relaxed mb-5">
-          The seminar schedule below will be updated throughout the semester. For past semesters please see the archive with record of who spoke and when.
+          The next seminar date is currently still open. Once a speaker and title are confirmed, this box can be updated to highlight the next talk directly on the front page.
         </p>
         <div class="rounded-xl bg-[var(--color-cyan-pale)] p-4 border border-[var(--color-cyan)]/30">
-          <p class="text-sm uppercase tracking-wide font-semibold text-[var(--color-cyan-dark)] mb-1">Suggested structure</p>
-          <p class="text-[var(--color-deep)] font-medium">Current semester in front, archive behind one click.</p>
+          <p class="text-sm uppercase tracking-wide font-semibold text-[var(--color-cyan-dark)] mb-1">Location</p>
+          <p class="text-[var(--color-deep)] font-medium">To be announced</p>
         </div>
       </div>
     </div>
@@ -137,6 +141,7 @@
         <p class="uppercase tracking-[0.2em] text-sm text-[var(--color-cyan-light)] mb-3">Current semester</p>
         <h2 class="text-3xl md:text-4xl font-bold text-[var(--color-brand)] mb-4">Seminar Schedule — Sommersemester 2026</h2>
         <p class="text-[var(--color-gray)] max-w-3xl mx-auto text-base md:text-lg">
+          Replace the placeholders below with confirmed dates, titles, speakers, and locations as the semester develops.
         </p>
       </div>
 
@@ -232,50 +237,11 @@
     </div>
   </section>
 
-  <!-- Archive -->
-  <section id="archive" class="max-w-6xl mx-auto py-20 px-4">
-    <div class="text-center mb-12">
-      <p class="uppercase tracking-[0.2em] text-sm text-[var(--color-violet)] mb-3">Documentation</p>
-      <h2 class="text-3xl md:text-4xl font-bold text-[var(--color-deep)] mb-4">Seminar Archive</h2>
-      <p class="text-[var(--color-gray)] max-w-3xl mx-auto text-base md:text-lg">
-        Previous semesters remain accessible as static pages. This gives a clear record of past speakers, titles, and dates without cluttering the current semester page.
-      </p>
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-      <a href="archive/ws25-26.html" class="block bg-white rounded-2xl shadow-md border border-[var(--color-violet)]/20 p-8 hover:shadow-xl transition">
-        <div class="inline-flex rounded-full bg-[var(--color-violet-pale)] text-[var(--color-violet-dark)] px-3 py-1 text-sm font-semibold mb-4">
-          Previous semester
-        </div>
-        <h3 class="text-2xl font-bold text-[var(--color-deep)] mb-3">Wintersemester 2025/26</h3>
-        <p class="text-[var(--color-gray)] leading-relaxed mb-4">
-          Includes the original schedule with all announced talks and speakers from the first Kuantum semester.
-        </p>
-        <p class="font-semibold text-[var(--color-violet)]">Open archived schedule →</p>
-      </a>
-
-      <div class="bg-[var(--color-brand-pale)] rounded-2xl border border-[var(--color-brand)]/30 p-8">
-        <h3 class="text-2xl font-bold text-[var(--color-deep)] mb-3">Suggested file structure</h3>
-        <div class="text-[var(--color-deep)] leading-relaxed space-y-2 font-mono text-sm bg-white/70 rounded-xl p-4">
-          <p>index.html</p>
-          <p>archive/ws25-26.html</p>
-          <p>archive/ss26.html <span class="font-sans text-[var(--color-gray)]">(optional snapshot later)</span></p>
-          <p>logo_white.svg</p>
-          <p>dirk.jpg, marvin.jpg, rafael.jpg, jonathan.jpg</p>
-        </div>
-        <p class="mt-4 text-sm text-[var(--color-deep-pale)]">
-          This makes the current page easy to update while preserving old schedules unchanged.
-        </p>
-      </div>
-    </div>
-  </section>
-
   <!-- Committee -->
   <section id="committee" class="bg-white py-20 px-4">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-3xl font-bold mb-12 text-[var(--color-deep)] text-center">Organizing Committee</h2>
       <div class="grid md:grid-cols-4 gap-8">
-
         <div class="bg-[var(--color-surface)] rounded-2xl shadow-md p-6 text-center">
           <img src="dirk.jpg" alt="Dirk Hundertmark" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
           <h3 class="text-xl font-semibold mb-2 text-[var(--color-deep)]">Dirk Hundertmark</h3>
@@ -334,7 +300,6 @@
     <p>&copy; 2026 Kuantum – Karlsruhe: Quantum Seminar</p>
   </footer>
 
-  <!-- Mobile menu script -->
   <script>
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
