@@ -1,231 +1,115 @@
-<!-- version 1.00 by M. R. Schulz, archive page for Wintersemester 2025/26 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kuantum Archive – Wintersemester 2025/26</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    :root {
-      --color-brand: #FFB703;
-      --color-brand-light: #FFD166;
-      --color-brand-pale: #FFF3D6;
-      --color-brand-dark: #FB8500;
-      --color-deep: #0D1B2A;
-      --color-deep-light: #1B263B;
-      --color-deep-pale: #415A77;
-      --color-deep-dark: #000814;
-      --color-cyan: #3DDAD7;
-      --color-cyan-light: #74E4E1;
-      --color-cyan-pale: #E6FAFB;
-      --color-cyan-dark: #00A6A3;
-      --color-violet: #6C63FF;
-      --color-violet-light: #9A94FF;
-      --color-violet-pale: #E0D7FF;
-      --color-violet-dark: #4338CA;
-      --color-red: #D62828;
-      --color-red-light: #F07171;
-      --color-red-pale: #FAD4D4;
-      --color-red-dark: #9B1C1C;
-      --color-white: #FFFFFF;
-      --color-surface: #F4F4F9;
-      --color-gray: #778DA9;
-      --color-darktext: #2C2C2C;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    .schedule-item:hover {
-      transform: translateY(-2px);
-      transition: transform 180ms ease;
-    }
-  </style>
-</head>
-<body class="bg-[var(--color-surface)] text-[var(--color-deep)] font-sans">
-
-  <!-- Navbar -->
-  <header class="sticky top-0 z-50 bg-[var(--color-deep)] text-white shadow-md">
-    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
-      <a href="index.html" class="flex items-center space-x-3">
-        <img src="logo_white.svg" alt="Kuantum Logo" class="h-10 w-auto">
-        <div>
-          <span class="hidden sm:block text-2xl font-bold text-[var(--color-brand)] leading-none">Kuantum</span>
-          <span class="hidden sm:block text-xs text-[var(--color-cyan-light)] tracking-wide uppercase">Archive</span>
-        </div>
-      </a>
-
-      <nav class="hidden md:flex items-center space-x-6">
-        <a href="index.html" class="hover:text-[var(--color-brand)]">Current Semester</a>
-        <a href="#schedule" class="hover:text-[var(--color-brand)]">WS 2025/26</a>
-        <a href="#notes" class="hover:text-[var(--color-brand)]">Notes</a>
-        <a href="#contact" class="hover:text-[var(--color-brand)]">Contact</a>
-      </nav>
-
-      <button id="menu-btn" class="md:hidden flex items-center focus:outline-none" aria-label="Toggle navigation">
-        <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
-    </div>
-
-    <div id="mobile-menu" class="hidden md:hidden bg-[var(--color-deep-light)] px-4 pb-4 space-y-2">
-      <a href="index.html" class="block py-2 hover:text-[var(--color-brand)]">Current Semester</a>
-      <a href="#schedule" class="block py-2 hover:text-[var(--color-brand)]">WS 2025/26</a>
-      <a href="#notes" class="block py-2 hover:text-[var(--color-brand)]">Notes</a>
-      <a href="#contact" class="block py-2 hover:text-[var(--color-brand)]">Contact</a>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section class="bg-gradient-to-r from-[var(--color-deep)] via-[var(--color-violet)] to-[var(--color-brand-dark)] text-white py-20">
-    <div class="max-w-5xl mx-auto px-4 text-center">
-      <p class="uppercase tracking-[0.25em] text-sm md:text-base text-white/80 mb-4">Kuantum Archive</p>
-      <h1 class="text-4xl md:text-5xl font-extrabold mb-6">Wintersemester 2025/26</h1>
-      <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-white/90">
-        Archived seminar schedule of the past Kuantum semester. This pages purpose is to record speakers, titles, and dates.
-      </p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <a href="index.html"
-           class="px-6 py-3 bg-white text-[var(--color-deep)] font-semibold rounded-xl shadow-md hover:bg-[var(--color-cyan)] hover:text-white transition">
-          Back to Current Semester
-        </a>
-        <a href="#schedule"
-           class="px-6 py-3 bg-[var(--color-deep)]/60 text-white font-semibold rounded-xl shadow-md hover:bg-[var(--color-deep-dark)] transition border border-white/20">
-          View Archived Schedule
-        </a>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The first Kuantum semester: seven talks in Karlsruhe, from November 2025 to February 2026. Browse speakers, titles, and dates.">
+  <meta name="theme-color" content="#0D1B2A">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Winter 2025/26 — Kuantum Seminar Archive">
+  <meta property="og:description" content="The first Kuantum semester: seven talks in Karlsruhe, from November 2025 to February 2026. Browse speakers, titles, and dates.">
+  <title>Winter 2025/26 — Kuantum Seminar Archive</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo-light.svg">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
+</head><body id="top" class="archive-page">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Kuantum home">
+      <img src="assets/logo.svg" width="43" height="38" alt="">
+      <span><span class="brand-name">kuantum<span style="color:var(--photonic-amber)">.</span></span><span class="brand-descriptor">Karlsruhe Quantum Seminar</span></span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14"/></svg></button>
+    <nav class="site-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="index.html#schedule">Programme</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#committee">People</a>
+      <a href="ws25-26.html" aria-current="page">Archive</a>
+      <a href="index.html#join" class="nav-cta">Join the seminar <span aria-hidden="true">→</span></a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero archive-hero dark" aria-labelledby="hero-title"><div class="container hero-main"><div><p class="eyebrow">The Kuantum archive · Semester 01</p><h1 id="hero-title">A record of<br><em>shared ideas.</em></h1><p class="hero-description">Speakers, questions, and conversations from our first semester.<br>Wintersemester 2025/26.</p><div class="button-row"><a class="button button-primary" href="#schedule">Browse the archive <span aria-hidden="true">↓</span></a><a class="text-link" href="index.html">Back to Kuantum <span aria-hidden="true">→</span></a></div></div><img class="archive-mark" src="assets/logo.svg" width="140" height="118" alt=""></div></section>
+  <section class="section programme" id="schedule" aria-labelledby="programme-title">
+    <div class="container">
+      <div class="section-heading">
+        <div><p class="eyebrow">From the archive</p><h2 id="programme-title">Winter 2025/26</h2><p>November 2025 – February 2026 · 7 talks</p></div>
+        <nav class="semester-switch" aria-label="Semester"><a href="index.html#schedule">Winter 2026/27</a><a href="ss26.html#schedule">Summer 2026</a><a href="ws25-26.html#schedule" aria-current="page">Winter 2025/26</a></nav>
       </div>
-    </div>
-  </section>
-
-  <!-- Archive Intro -->
-  <section id="notes" class="max-w-5xl mx-auto py-16 px-4">
-    <div>
-      <h2 class="text-3xl font-bold mb-5 text-[var(--color-deep)]">About this archive page</h2>
-      <p class="text-lg text-[var(--color-gray)] leading-relaxed mb-4">
-        This page preserves the Wintersemester 2025/26 seminar schedule as an archive. It documents who gave a talk and when.
-      </p>
-    </div>
-  </section>
-
-  <!-- Schedule -->
-  <section id="schedule" class="bg-[var(--color-deep)] text-white py-20 px-4">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-12">
-        <p class="uppercase tracking-[0.2em] text-sm text-[var(--color-cyan-light)] mb-3">Archived semester</p>
-        <h2 class="text-3xl md:text-4xl font-bold text-[var(--color-brand)] mb-4">Seminar Schedule — Wintersemester 2025/26</h2>
-        <p class="text-[var(--color-gray)] max-w-3xl mx-auto text-base md:text-lg">
-          Archived talk list from the first Kuantum semester.
-        </p>
+      <div class="programme-tools" id="programme-tools" hidden>
+        <div class="search-box"><label class="sr-only" for="talk-search">Search talks by title or speaker</label><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input type="search" id="talk-search" placeholder="Search a title or speaker…" aria-controls="talk-list" autocomplete="off"></div>
+        
       </div>
-
-      <div class="grid gap-4 max-w-5xl mx-auto">
-        <div class="schedule-item grid md:grid-cols-[150px_1fr] gap-4 items-start p-5 rounded-2xl bg-[var(--color-brand)]/20 border border-white/10">
-          <div>
-            <p class="font-semibold text-[var(--color-brand)]">6 November</p>
-          </div>
-          <div>
-            <p class="text-lg font-semibold">Bounds on the Ionization of Atoms</p>
-            <p class="text-white/70">Dirk Hundertmark</p>
-          </div>
-        </div>
-
-        <div class="schedule-item grid md:grid-cols-[150px_1fr] gap-4 items-start p-5 rounded-2xl bg-white/5 border border-white/10">
-          <div>
-            <p class="font-semibold text-[var(--color-brand)]">20 November</p>
-          </div>
-          <div>
-            <p class="text-lg font-semibold">Absence of the Confinement Induced Efimov Effect in a Specific Geometry</p>
-            <p class="text-white/70">Marvin R. Schulz</p>
-          </div>
-        </div>
-
-        <div class="schedule-item grid md:grid-cols-[150px_1fr] gap-4 items-start p-5 rounded-2xl bg-white/5 border border-white/10">
-          <div>
-            <p class="font-semibold text-[var(--color-brand)]">4 December</p>
-          </div>
-          <div>
-            <p class="text-lg font-semibold">A test function based approach to the ground state energy of weakly coupled Schrödinger operators in one and two dimensions</p>
-            <p class="text-white/70">Jonathan Rau</p>
-          </div>
-        </div>
-
-        <div class="schedule-item grid md:grid-cols-[150px_1fr] gap-4 items-start p-5 rounded-2xl bg-white/5 border border-white/10">
-          <div>
-            <p class="font-semibold text-[var(--color-brand)]">18 December</p>
-          </div>
-          <div>
-            <p class="text-lg font-semibold">Transition and stability for magnetohydrodynamics</p>
-            <p class="text-white/70">Niklas Knobel, Imperial College London</p>
-          </div>
-        </div>
-
-        <div class="schedule-item grid md:grid-cols-[150px_1fr] gap-4 items-start p-5 rounded-2xl bg-white/5 border border-white/10">
-          <div>
-            <p class="font-semibold text-[var(--color-brand)]">22 January</p>
-          </div>
-          <div>
-            <p class="text-lg font-semibold">The effective mass of the Fröhlich polaron at strong coupling</p>
-            <p class="text-white/70">Morris Brooks, Universität Zürich</p>
-          </div>
-        </div>
-
-        <div class="schedule-item grid md:grid-cols-[150px_1fr] gap-4 items-start p-5 rounded-2xl bg-white/5 border border-white/10">
-          <div>
-            <p class="font-semibold text-[var(--color-brand)]">5 February</p>
-          </div>
-          <div>
-            <p class="text-lg font-semibold">Subharmonic Comparison Principles - Useful Addition to Your Toolbox</p>
-            <p class="text-white/70">Michal Jex, CTU</p>
-          </div>
-        </div>
-
-        <div class="schedule-item grid md:grid-cols-[150px_1fr] gap-4 items-start p-5 rounded-2xl bg-white/5 border border-white/10">
-          <div>
-            <p class="font-semibold text-[var(--color-brand)]">19 February</p>
-          </div>
-          <div>
-            <p class="text-lg font-semibold">Lower Bounds for the Ground State Energy of Atoms and Applications to Molecules</p>
-            <p class="text-white/70">Michael Hofacker</p>
-          </div>
-        </div>
+      <div class="schedule-labels" aria-hidden="true"><span>Date</span><span>Talk &amp; speaker</span><span>Year</span></div>
+      <div class="talk-list" id="talk-list">
+        <article class="talk" id="talk-2025-11-06" data-title="Bounds on the Ionization of Atoms" data-speaker="Dirk Hundertmark" data-location="">
+          <time class="talk-date" datetime="2025-11-06" aria-label="Thursday, 6 November 2025"><span class="date-day">06</span><span class="date-month">Nov<span class="date-weekday">Thu · 2025</span></span></time>
+          <div class="talk-content"><h3>Bounds on the Ionization of Atoms</h3><p class="speaker">Dirk Hundertmark</p></div>
+          <p class="archive-year">2025</p>
+        </article>
+        <article class="talk" id="talk-2025-11-20" data-title="Absence of the Confinement Induced Efimov Effect in a Specific Geometry" data-speaker="Marvin R. Schulz" data-location="">
+          <time class="talk-date" datetime="2025-11-20" aria-label="Thursday, 20 November 2025"><span class="date-day">20</span><span class="date-month">Nov<span class="date-weekday">Thu · 2025</span></span></time>
+          <div class="talk-content"><h3>Absence of the Confinement Induced Efimov Effect in a Specific Geometry</h3><p class="speaker">Marvin R. Schulz</p></div>
+          <p class="archive-year">2025</p>
+        </article>
+        <article class="talk" id="talk-2025-12-04" data-title="A test function based approach to the ground state energy of weakly coupled Schrödinger operators in one and two dimensions" data-speaker="Jonathan Rau" data-location="">
+          <time class="talk-date" datetime="2025-12-04" aria-label="Thursday, 4 December 2025"><span class="date-day">04</span><span class="date-month">Dec<span class="date-weekday">Thu · 2025</span></span></time>
+          <div class="talk-content"><h3>A test function based approach to the ground state energy of weakly coupled Schrödinger operators in one and two dimensions</h3><p class="speaker">Jonathan Rau</p></div>
+          <p class="archive-year">2025</p>
+        </article>
+        <article class="talk" id="talk-2025-12-18" data-title="Transition and stability for magnetohydrodynamics" data-speaker="Niklas Knobel, Imperial College London" data-location="">
+          <time class="talk-date" datetime="2025-12-18" aria-label="Thursday, 18 December 2025"><span class="date-day">18</span><span class="date-month">Dec<span class="date-weekday">Thu · 2025</span></span></time>
+          <div class="talk-content"><h3>Transition and stability for magnetohydrodynamics</h3><p class="speaker">Niklas Knobel, Imperial College London</p></div>
+          <p class="archive-year">2025</p>
+        </article>
+        <article class="talk" id="talk-2026-01-22" data-title="The effective mass of the Fröhlich polaron at strong coupling" data-speaker="Morris Brooks, Universität Zürich" data-location="">
+          <time class="talk-date" datetime="2026-01-22" aria-label="Thursday, 22 January 2026"><span class="date-day">22</span><span class="date-month">Jan<span class="date-weekday">Thu · 2026</span></span></time>
+          <div class="talk-content"><h3>The effective mass of the Fröhlich polaron at strong coupling</h3><p class="speaker">Morris Brooks, Universität Zürich</p></div>
+          <p class="archive-year">2026</p>
+        </article>
+        <article class="talk" id="talk-2026-02-05" data-title="Subharmonic Comparison Principles - Useful Addition to Your Toolbox" data-speaker="Michal Jex, CTU" data-location="">
+          <time class="talk-date" datetime="2026-02-05" aria-label="Thursday, 5 February 2026"><span class="date-day">05</span><span class="date-month">Feb<span class="date-weekday">Thu · 2026</span></span></time>
+          <div class="talk-content"><h3>Subharmonic Comparison Principles - Useful Addition to Your Toolbox</h3><p class="speaker">Michal Jex, CTU</p></div>
+          <p class="archive-year">2026</p>
+        </article>
+        <article class="talk" id="talk-2026-02-19" data-title="Lower Bounds for the Ground State Energy of Atoms and Applications to Molecules" data-speaker="Michael Hofacker" data-location="">
+          <time class="talk-date" datetime="2026-02-19" aria-label="Thursday, 19 February 2026"><span class="date-day">19</span><span class="date-month">Feb<span class="date-weekday">Thu · 2026</span></span></time>
+          <div class="talk-content"><h3>Lower Bounds for the Ground State Energy of Atoms and Applications to Molecules</h3><p class="speaker">Michael Hofacker</p></div>
+          <p class="archive-year">2026</p>
+        </article>
       </div>
+      <div class="empty-state" id="no-results" hidden><h3>No talks to show.</h3><p>Try another search or view the full programme.</p><button class="button button-outline" id="reset-filters" type="button">Show all talks <span aria-hidden="true">→</span></button></div>
+      <div class="programme-bottom">
+        <div><p class="results-count" id="results-count" role="status" aria-live="polite">7 talks</p></div>
+        <a class="text-link" href="index.html#schedule">View Winter 2026/27 <span aria-hidden="true">→</span></a>
+      </div>
+      <p class="archive-note">The first Kuantum semester. This archive preserves the announced speakers, titles, and dates.</p>
     </div>
   </section>
-
-  <!-- Contact -->
-  <section id="contact" class="max-w-5xl mx-auto py-20 px-4 text-center">
-    <h2 class="text-3xl font-bold mb-6 text-[var(--color-deep)]">Contact</h2>
-    <p class="text-lg text-[var(--color-gray)] mb-4">
-      For seminar questions or archive corrections, please contact
-    </p>
-    <p class="text-xl font-semibold text-[var(--color-deep)]">
-      <a href="mailto:kuantum.seminar@gmail.com" class="underline text-[var(--color-violet)] hover:text-[var(--color-brand)]">
-        kuantum.seminar@gmail.com
-      </a>
-    </p>
-    <div class="mt-8">
-      <a href="index.html" class="inline-block px-6 py-3 rounded-xl bg-[var(--color-deep)] text-white font-semibold hover:bg-[var(--color-deep-light)] transition">
-        ← Back to current semester
-      </a>
+  <section class="newsletter" aria-labelledby="newsletter-title">
+    <div class="container newsletter-inner">
+      <div><p class="eyebrow">Stay connected</p><h2 id="newsletter-title">A place in the conversation.</h2><p>Receive seminar announcements and new programme dates in your inbox.</p></div>
+      <a class="button" href="https://ba5b3b76.sibforms.com/serve/MUIFAFUzN4FgeEGYw3ea9w2HVEX1IYk2JWzrAiaWU1qsQ0YbyJrS6NwUquKiuTx1pCVBFZCc6aQFK0DBP5rWvbJ0fBPP4z4oKzSy1KR-JmOyS_hrXsguVL6SOwrgj33NGjQ47zBnfgXjPMkK0AF2a8Y5AjW5oxYVQEHfXMSI8DGSs7or992V1kfRRifyd-_Y0cLbbAvIJ9laZaRE" target="_blank" rel="noopener noreferrer">Join the mailing list <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
     </div>
   </section>
-
-  <!-- Footer -->
-  <footer class="bg-[var(--color-deep)] text-[var(--color-gray)] py-6 text-center">
-    <p>&copy; 2026 Kuantum – Karlsruhe: Quantum Seminar</p>
-  </footer>
-
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
+  <section class="contact" id="contact" aria-labelledby="contact-title"><div class="container contact-inner">
+    <div><p class="eyebrow">Get in touch</p><h2 id="contact-title">A question about the archive?</h2><p>For seminar questions or corrections to the programme.</p></div>
+    <a class="contact-email" href="mailto:kuantum.seminar@gmail.com">kuantum.seminar@gmail.com <span aria-hidden="true">↗</span></a>
+  </div></section></main>
+<footer class="dark">
+  <div class="container footer-main">
+    <div class="footer-brand">
+      <a class="brand" href="index.html" aria-label="Kuantum home"><img src="assets/logo.svg" width="43" height="38" alt=""><span class="brand-name">kuantum<span style="color:var(--photonic-amber)">.</span></span></a>
+      <p>Quantum physics. Mathematical physics. Spectral theory.</p>
+    </div>
+    <details class="impressum" id="impressum" open>
+      <summary>Impressum</summary>
+      <address><strong>Workgroup Applied Analysis – Secretariat</strong><br>Kollegiengebäude Mathematik (20.30), Room 2.029<br>Englerstrasse 2, 76131 Karlsruhe, Germany</address>
+    </details>
+  </div>
+  <div class="container footer-bottom"><p>© <span data-year>2026</span> Kuantum · Karlsruhe Quantum Seminar</p><a href="#top">Back to top ↑</a></div>
+</footer>
 </body>
 </html>
-
