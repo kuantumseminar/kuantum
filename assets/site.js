@@ -170,7 +170,7 @@
         } else {
           nextLabel.textContent = 'Looking ahead';
           nextTitle.textContent = 'Next seminar to be announced.';
-          nextDescription.textContent = `${programmeName ? `The ${programmeName} programme` : 'This programme'} has concluded. Join the mailing list for new dates and seminar announcements.`;
+          nextDescription.textContent = 'No further talks are currently announced. Join the mailing list for new dates and seminar announcements.';
           if (nextLink && announcementLink) {
             if (announcementLink.href === null) nextLink.removeAttribute('href');
             else nextLink.setAttribute('href', announcementLink.href);
